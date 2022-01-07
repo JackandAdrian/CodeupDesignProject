@@ -11,6 +11,24 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: 'Anton', sans-serif;
 }
+.circle{
+    width: 60px;
+    height: 60px;
+    border: solid white 3px ;
+    border-radius: 50%;
+}
+#red{
+    background-color: red;
+}
+#orange{
+    background-color: orange;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
 
 /*viewport small query*/
 @media screen and (max-width:576px){
@@ -28,22 +46,5 @@ p {
     }
     h4{ text-align: center
     }
-    .circle{
-        width: 60px;
-        height: 60px;
-        border: solid white 3px ;
-        border-radius: 50%;
-    }
-    #red{
-        background-color: red;
-    }
-    #orange{
-        background-color: orange;
-    }
-    #green{
-        background-color: green;
-    }
-    #blue{
-        background-color: blue;
-    }
+
 }
