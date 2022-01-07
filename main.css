@@ -16,6 +16,7 @@ p {
     height: 60px;
     border: solid white 3px ;
     border-radius: 50%;
+    text-align: center;
 }
 #red{
     background-color: red;
