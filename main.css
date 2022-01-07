@@ -1,6 +1,21 @@
+/*Global styling*/
+
+body {
+    background-color: #E6E6E6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abel', sans-serif;
+}
+
+p {
+    font-family: 'Anton', sans-serif;
+}
+
+/*viewport small query*/
 @media screen and (max-width:576px){
-    body{
-        background-color: lightgray;
+    .header {
+        display: flex;
     }
     h1{
     text-align: center;
