@@ -1,56 +1,190 @@
-/*Global styling*/
-
-body {
-    background-color: #E6E6E6;
+/*DEFAULT STRUCTURE*/
+body{
+    background-color: lightgray;
+}
+/*WHITE BACKGROUND LOGO*/
+.line-background{
+    height: 5em;
+    background-color: white;
+    margin-top: 2em;}
+.left-nav{
+    top: 1em;
+    margin-right: 5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Abel', sans-serif;
-    text-align: center
+.right-nav {
+    display: flex;
+    justify-content:space-evenly;
+    top: 1.5em;
 }
 
-p {
-    font-family: 'Anton', sans-serif;
+/*HIDE NAV LINKS WHEN ENLARGED*/
+.hideme *{
+    display: none;
 }
-.circle{
-    width: 85px;
-    height: 85px;
-    border: solid white 3px ;
-    border-radius: 50%;
+.small-links *{
+    display: none;}
+/*--------------------------*/
+
+/*LOGO SIZE*/
+.logo-size>img{
+    height: 10em;}
+
+/*LOGO CONTAINER AND NAV*/
+.container{
+    position: fixed;
+    margin: 0;
+    top: 0;}
+
+.logo-container {
     text-align: center;
 }
-#red{
-    background-color: #E6563B;
+
+.hide-codeup{
+    display: none;
+
 }
-#orange{
-    background-color: #EB9D3A;
-}
-#green{
-    background-color: #7cb06C;
-}
-#blue{
-    background-color: #00ABA9;
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
-@media screen and (min-width: 760px) {
-    .thumbnails-lg {
-        height: 150px;
-        width: 200px;
+/*VERY SMALL SCREEN TRANSITION*/
+@media screen and (max-width:576px) {
+    .logo-container {
     }
-}
-
-/*viewport small query*/
-@media screen and (max-width:576px){
-    .header {
+    .hideme *{
         display: flex;
     }
-    h1{
-    text-align: center;
-        background-color: white;
-}
-    h2 {
-        text-align: center
+    .very-small-links{
+        justify-content: space-evenly;
     }
-    h4{ text-align: center
+    .hide-codeup{
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-nav *{
+        display: none;
     }
 }
+/*SMALL SCREEN TRANSITION*/
+@media screen and (min-width: 577px) and (max-width:800px ) {
+    .small-links {
+        position: fixed;
+        top: 3.5em;
+        width: 100%;
+    }
+
+    .small-links * {
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .logo-container {
+        margin-left: 2em;
+    }
+
+    .hide-codeup{
+        display: revert;
+        margin-left: 1.7em;
+
+    }
+    #codeup-holder{
+        display: flex;
+        justify-content: center;
+
+    }
+    .main-nav *{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!*Global styling*!*/
+
+/*body {*/
+/*    background-color: #E6E6E6;*/
+/*}*/
+
+/*h1, h2, h3, h4, h5, h6 {*/
+/*    font-family: 'Abel', sans-serif;*/
+/*    text-align: center*/
+/*}*/
+
+/*p {*/
+/*    font-family: 'Anton', sans-serif;*/
+/*}*/
+/*.circle{*/
+/*    width: 85px;*/
+/*    height: 85px;*/
+/*    border: solid white 3px ;*/
+/*    border-radius: 50%;*/
+/*    text-align: center;*/
+/*}*/
+/*#red{*/
+/*    background-color: #E6563B;*/
+/*}*/
+/*#orange{*/
+/*    background-color: #EB9D3A;*/
+/*}*/
+/*#green{*/
+/*    background-color: #7cb06C;*/
+/*}*/
+/*#blue{*/
+/*    background-color: #00ABA9;*/
+/*}*/
+
+/*@media screen and (min-width: 760px) {*/
+/*    .thumbnails-lg {*/
+/*        height: 150px;*/
+/*        width: 200px;*/
+/*    }*/
+/*}*/
+
+/*!*viewport small query*!*/
+/*@media screen and (max-width:576px){*/
+/* #logo-background{*/
+/* background-color: white;*/
+/* }*/
+/*}*/
