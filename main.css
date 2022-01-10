@@ -1,6 +1,7 @@
 /*DEFAULT STRUCTURE*/
 body{
     background-color: #E6E6E6;
+    font-size: 1em;
 }
 /*WHITE BACKGROUND LOGO*/
 .line-background{
@@ -34,9 +35,10 @@ body{
 .container{
     position: fixed;
     margin: 0;
-    top: 0;}
+    top: 0;
+}
 
-.logo-container {
+.logo-size {
     text-align: center;
 }
 
@@ -44,20 +46,72 @@ body{
     display: none;
 
 }
+/*TURN OFF STYLING FOR NAV LINKS*/
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
+.from-park-city *{
+    margin-top: 1em;
+    text-align: center;
+}
+/*FOUR CIRCLES*/
+.circle {
+    border-radius: 50%;
+    background-color: red;
+    border: .5em white solid;
+    height: 9em;
+    width: 9em;
+    margin-bottom: .5em;
+}
+/*CIRCLE COLORS*/
 
+#red{
+    background-color: #e6563b;
+}
+#orange{
+    background-color: #eb9d3a;
+
+}
+#green{
+    background-color: #7cb06c;
+}
+#teal{
+    background-color: #00aba9;
+}
+/*-------------------*/
+.from-park-city{
+    margin-bottom: 2em;
+}
+
+.circle-holder{
+    display: flex;
+    justify-content: center;
+}
+.visual-design{
+    text-align: center;
+}
+.selected-work{
+    margin: 5em 0 1.5em 0;
+    text-align: center;
+}
+.apple-ipad {
+
+    text-align: center;
+}
+#hide-all-small *{
+    display: none;
+}
 /*VERY SMALL SCREEN TRANSITION*/
-@media screen and (max-width:576px) {
-    .logo-container {
-    }
+@media screen and (max-width:576px){
+    .show-large{display: none}
+
     .hideme *{
         display: flex;
     }
     .very-small-links{
         justify-content: space-evenly;
+        margin: 1em 0 1em 0;
     }
     .hide-codeup{
         display: flex;
@@ -67,9 +121,29 @@ a, a:hover, a:focus, a:active {
     .main-nav *{
         display: none;
     }
+    .visual-design{
+        text-align: center;
+    }
+    .apple-ipad img {
+        width: 350px;
+        height: 200px ;
+    }
+    .featured-project{
+        margin-top: 1.5em;
+    }
+    .circle-2 {
+        border-radius: 50%;
+        height: 18px;
+        width: 18px;
+        margin-top: 1.5em;
+        margin-left: 1em;
+    }
+
 }
 /*SMALL SCREEN TRANSITION*/
 @media screen and (min-width: 577px) and (max-width:800px ) {
+    .hide-on-large{display: revert}
+    .show-large{display: none}
     .small-links {
         position: fixed;
         top: 3.5em;
@@ -82,7 +156,7 @@ a, a:hover, a:focus, a:active {
         justify-content: space-evenly;
     }
 
-    .logo-container {
+    .middle-container {
         margin-left: 2em;
     }
 
