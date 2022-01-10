@@ -49,6 +49,10 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
+.big-board { /** ADDED THIS CLASS PART FOR THE SECOND SECTION **/
+    text-align: center;
+}
+
 /*VERY SMALL SCREEN TRANSITION*/
 @media screen and (max-width:576px) {
     .logo-container {
@@ -66,6 +70,9 @@ a, a:hover, a:focus, a:active {
 
     .main-nav *{
         display: none;
+    }
+    .big-board {
+        margin-top: 8em;
     }
 }
 /*SMALL SCREEN TRANSITION*/
@@ -99,7 +106,19 @@ a, a:hover, a:focus, a:active {
     .main-nav *{
         display: none;
     }
+    .big-board, .big-board>p {
+        text-align: center;
+        margin-top: 8em;
+        padding: 0;
+    }
 }
+
+@media screen and (min-width: 801px) {
+    .big-board {
+        /*margin: 5em auto 0;*/
+    }
+}
+
 
 
 
