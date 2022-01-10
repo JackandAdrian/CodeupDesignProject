@@ -158,6 +158,10 @@ a, a:hover, a:focus, a:active {
 }
 /*SMALL SCREEN TRANSITION*/
 @media screen and (min-width: 768px) and (max-width:800px ) {
+    .separator {
+        border-bottom: 1px solid #bebebe;
+        width: 90%;
+    }
 
     .container {
         position: fixed;
@@ -331,51 +335,3 @@ a, a:hover, a:focus, a:active {
 
 
 
-
-/*!*Global styling*!*/
-
-/*body {*/
-/*    background-color: #E6E6E6;*/
-/*}*/
-
-/*h1, h2, h3, h4, h5, h6 {*/
-/*    font-family: 'Abel', sans-serif;*/
-/*    text-align: center*/
-/*}*/
-
-/*p {*/
-/*    font-family: 'Anton', sans-serif;*/
-/*}*/
-/*.circle{*/
-/*    width: 85px;*/
-/*    height: 85px;*/
-/*    border: solid white 3px ;*/
-/*    border-radius: 50%;*/
-/*    text-align: center;*/
-/*}*/
-/*#red{*/
-/*    background-color: #E6563B;*/
-/*}*/
-/*#orange{*/
-/*    background-color: #EB9D3A;*/
-/*}*/
-/*#green{*/
-/*    background-color: #7cb06C;*/
-/*}*/
-/*#blue{*/
-/*    background-color: #00ABA9;*/
-/*}*/
-
-/*@media screen and (min-width: 760px) {*/
-/*    .thumbnails-lg {*/
-/*        height: 150px;*/
-/*        width: 200px;*/
-/*    }*/
-/*}*/
-
-/*!*viewport small query*!*/
-/*@media screen and (max-width:576px){*/
-/* #logo-background{*/
-/* background-color: white;*/
-/* }*/
-/*}*/
