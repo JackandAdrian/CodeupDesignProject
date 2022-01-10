@@ -66,7 +66,6 @@ a, a:hover, a:focus, a:active {
 }
 /*CIRCLE COLORS*/
 
-<<<<<<< HEAD
 #red{
     background-color: #e6563b;
 }
@@ -103,12 +102,6 @@ a, a:hover, a:focus, a:active {
 #hide-all-small *{
     display: none;
 }
-=======
-.big-board { /** ADDED THIS CLASS PART FOR THE SECOND SECTION **/
-    text-align: center;
-}
-
->>>>>>> origin/main
 /*VERY SMALL SCREEN TRANSITION*/
 @media screen and (max-width:576px){
     .show-large{display: none}
@@ -128,7 +121,6 @@ a, a:hover, a:focus, a:active {
     .main-nav *{
         display: none;
     }
-<<<<<<< HEAD
     .visual-design{
         text-align: center;
     }
@@ -147,11 +139,6 @@ a, a:hover, a:focus, a:active {
         margin-left: 1em;
     }
 
-=======
-    .big-board {
-        margin-top: 8em;
-    }
->>>>>>> origin/main
 }
 /*SMALL SCREEN TRANSITION*/
 @media screen and (min-width: 577px) and (max-width:800px ) {
@@ -186,19 +173,7 @@ a, a:hover, a:focus, a:active {
     .main-nav *{
         display: none;
     }
-    .big-board, .big-board>p {
-        text-align: center;
-        margin-top: 8em;
-        padding: 0;
-    }
 }
-
-@media screen and (min-width: 801px) {
-    .big-board {
-        /*margin: 5em auto 0;*/
-    }
-}
-
 
 
 
