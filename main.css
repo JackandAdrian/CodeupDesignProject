@@ -38,12 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 .logo-size>img{
     height: 10em;}
 
-/*LOGO CONTAINER AND NAV*/
-/*.container{*/
-/*    position: fixed;*/
-/*    margin: 0;*/
-/*    top: 0;*/
-/*}*/
 
 .logo-size {
     text-align: center;
@@ -69,7 +63,7 @@ a, a:hover, a:focus, a:active {
     border: .5em white solid;
     height: 9em;
     width: 9em;
-    margin-bottom: .5em;
+    margin:0 0 .5em 0;
 }
 /*CIRCLE COLORS*/
 
@@ -102,18 +96,18 @@ a, a:hover, a:focus, a:active {
     margin: 5em 0 1.5em 0;
     text-align: center;
 }
-.apple-ipad {
-
-    text-align: center;
-}
 #hide-all-small {
     display: none;
 }
 #hide-main-nav{
     display: none;
 }
+.selected-work{
+    display: none;
+}
 /*VERY SMALL SCREEN TRANSITION*/
-@media screen and (max-width:576px){
+@media screen and (max-width:425px){
+
     .container{
         position: fixed;
         margin: 0;
@@ -136,10 +130,12 @@ a, a:hover, a:focus, a:active {
     .main-nav *, .large-screen{
         display: none;
     }
-    .visual-design{
+    .visual-design,.from-park-city{
+        font-family: anton;
         text-align: center;
     }
     .apple-ipad img {
+        display: revert;
         width: 350px;
         height: 200px ;
     }
@@ -156,14 +152,19 @@ a, a:hover, a:focus, a:active {
     #hide-all-small {
         display: revert;
     }
+    .selected-work{
+        display: revert;
+    }
 }
 /*SMALL SCREEN TRANSITION*/
-@media screen and (min-width: 577px) and (max-width:800px ) {
-    .container{
+@media screen and (min-width: 768px) and (max-width:800px ) {
+
+    .container {
         position: fixed;
         margin: 0;
         top: 0;
     }
+
     .hide-on-large{display: revert}
     .show-large{display: none}
     .small-links {
@@ -182,24 +183,54 @@ a, a:hover, a:focus, a:active {
         margin-left: 2em;
     }
 
-    .hide-codeup{
+    .hide-codeup {
         display: revert;
-        margin-left: 1.7em;
-
+        margin-bottom: 2em;
     }
-    #codeup-holder{
+
+    #codeup-holder {
         display: flex;
         justify-content: center;
 
     }
+
     .main-nav *, .large-screen{
         display: none;
     }
-    #hide-all-small{
+
+    #hide-all-small {
         display: revert;
     }
-}
 
+    .featured-project {
+        display: none;
+    }
+
+    .circle-2 {
+        display: none;
+    }
+
+    .image-left {
+        margin:0 1em 0 1em;
+    }
+    .image-right {
+        margin: 0 1em 0 1em;
+
+    }
+    .circle-3-holder {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .circle-3 {
+        border-radius: 50%;
+        height: 18px;
+        width: 18px;
+        margin-top: 1.5em;
+        margin-left: .5em;
+
+    }
+}
 /* Large Screen Viewport */
 @media screen and (min-width: 992px){
     .container {
@@ -336,7 +367,10 @@ a, a:hover, a:focus, a:active {
 /*}*/
 
 /*@media screen and (min-width: 760px) {*/
-
+/*    .thumbnails-lg {*/
+/*        height: 150px;*/
+/*        width: 200px;*/
+/*    }*/
 /*}*/
 
 /*!*viewport small query*!*/
