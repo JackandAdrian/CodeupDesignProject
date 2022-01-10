@@ -32,11 +32,11 @@ body{
     height: 10em;}
 
 /*LOGO CONTAINER AND NAV*/
-.container{
-    position: fixed;
-    margin: 0;
-    top: 0;
-}
+/*.container{*/
+/*    position: fixed;*/
+/*    margin: 0;*/
+/*    top: 0;*/
+/*}*/
 
 .logo-size {
     text-align: center;
@@ -85,7 +85,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .circle-holder{
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
 }
 .visual-design{
@@ -99,11 +99,19 @@ a, a:hover, a:focus, a:active {
 
     text-align: center;
 }
-#hide-all-small *{
+#hide-all-small {
+    display: none;
+}
+#hide-main-nav{
     display: none;
 }
 /*VERY SMALL SCREEN TRANSITION*/
 @media screen and (max-width:576px){
+    .container{
+        position: fixed;
+        margin: 0;
+        top: 0;
+    }
     .show-large{display: none}
 
     .hideme *{
@@ -138,10 +146,17 @@ a, a:hover, a:focus, a:active {
         margin-top: 1.5em;
         margin-left: 1em;
     }
-
+    #hide-all-small {
+        display: revert;
+    }
 }
 /*SMALL SCREEN TRANSITION*/
 @media screen and (min-width: 577px) and (max-width:800px ) {
+    .container{
+        position: fixed;
+        margin: 0;
+        top: 0;
+    }
     .hide-on-large{display: revert}
     .show-large{display: none}
     .small-links {
@@ -172,6 +187,9 @@ a, a:hover, a:focus, a:active {
     }
     .main-nav *{
         display: none;
+    }
+    #hide-all-small{
+        display: revert;
     }
 }
 
