@@ -3,6 +3,12 @@ body{
     background-color: #E6E6E6;
     font-size: 1em;
 }
+p {
+    font-family: 'Anton', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abel', sans-serif;
+}
 /*WHITE BACKGROUND LOGO*/
 .line-background{
     height: 5em;
@@ -126,7 +132,7 @@ a, a:hover, a:focus, a:active {
         justify-content: center;
     }
 
-    .main-nav *{
+    .main-nav *, .large-screen{
         display: none;
     }
     .visual-design{
@@ -185,7 +191,7 @@ a, a:hover, a:focus, a:active {
         justify-content: center;
 
     }
-    .main-nav *{
+    .main-nav *, .large-screen{
         display: none;
     }
     #hide-all-small{
@@ -193,7 +199,39 @@ a, a:hover, a:focus, a:active {
     }
 }
 
-
+/* Large Screen Viewport */
+@media screen and (min-width: 992px){
+    .container {
+        width: 80%;
+    }
+    .navbar {
+        background-color: #F0F0F0;
+        height: 65px;
+    }
+    #small-nav {
+        display: none;
+    }
+    .logo-size {
+        height: 105px;
+        width: 105px;
+        margin-right: 0.5em;
+    }
+    h3 {
+        font-weight: bolder;
+        font-size: 64px;
+    }
+    .badges {
+        margin-left: 200px;
+    }
+    .circle-holder {
+        padding: 0 0 0 2em;
+        width: 80%;
+    }
+    hr.separator {
+        border-bottom: 1px solid #bebebe;
+        width: 90%;
+    }
+}
 
 
 
