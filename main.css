@@ -135,8 +135,7 @@ a, a:hover, a:focus, a:active {
     }
     .apple-ipad img {
         display: revert;
-        width: 350px;
-        height: 200px ;
+
     }
     .featured-project{
         margin-top: 1.5em;
